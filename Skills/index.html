@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="/img/icon/logo.svg">
+    <title>Portfolio2023 │ Slills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap&family=Satisfy&family=Smooch&display=swap&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-child">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+    <header id="getHeader"></header>
+    <main>
+        <div class="rootWrapper">
+
+            <section class="titleContainer">
+                <h2 class="font-brush">Skills</h2>
+                <h3 class="font-serif">スキル一覧</h3>
+            </section>
+
+            <section class="mainContainer">
+                <section class="searchSection">
+                    <input type="search" placeholder="キーワードを入力">
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </section>
+                <section class="badgeSortSection">
+                    <button class="btn-badgeSort active" id="btn-badgeSort--all" data-class="all">すべて</button>
+                    <button class="btn-badgeSort" data-class="AI"><i class="fa-solid fa-tag"></i>AI</button>
+                    <button class="btn-badgeSort" data-class="JS"><i class="fa-solid fa-tag"></i>JS</button>
+                    <button class="btn-badgeSort" data-class="Python"><i class="fa-solid fa-tag"></i>Python</button>
+                    <button class="btn-badgeSort" data-class="Framework"><i class="fa-solid fa-tag"></i>Framework</button>
+                    <button class="btn-badgeSort" data-class="Library"><i class="fa-solid fa-tag"></i>Library</button>
+                    <button class="btn-badgeSort" data-class="DB"><i class="fa-solid fa-tag"></i>DB</button>
+                    <button class="btn-badgeSort" data-class="Markup"><i class="fa-solid fa-tag"></i>Markup</button>
+                    <button class="btn-badgeSort" data-class="Style"><i class="fa-solid fa-tag"></i>Style</button>
+                    <button class="btn-badgeSort" data-class="Preprocessor"><i class="fa-solid fa-tag"></i>Preprocessor</button>
+                    <button class="btn-badgeSort" data-class="Design"><i class="fa-solid fa-tag"></i>Design</button>
+                    <button class="btn-badgeSort" data-class="Other"><i class="fa-solid fa-tag"></i>Other</button>
+                    <button class="btn-badgeSort" data-class="パッケージ管理"><i class="fa-solid fa-tag"></i>パッケージ管理</button>
+                    <button class="btn-badgeSort" data-class="バージョン管理"><i class="fa-solid fa-tag"></i>バージョン管理</button>
+                </section>
+                <section class="cardSection">
+                    <div class="cardSection__notFound">
+                        <p>Not found</p>
+                    </div>
+                    <a href="#" class="card" data-class="AI Python">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-stablediffusion-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>StableDiffusion</p>
+                            <p>画像/動画生成AI</p>
+                            <p class="card__textBox__comment">
+                                もっとも力を入れて研究しているAI
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Python</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="AI">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年03月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-gpt-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>GPT-4</p>
+                            <p>最強の生成AI</p>
+                            <p class="card__textBox__comment">
+                                頼れる学習の味方。
+                                <br>ver4が出た瞬間に課金し、日々学習に役立てている。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Python">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2022年12月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-python-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Python</p>
+                            <p>機械学習主力言語</p>
+                            <p class="card__textBox__comment">
+                                StableDiffusionやデザイン制作で利用。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Python</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Python VCS">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-python-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Homebrew</p>
+                            <p>パッケージマネージャー</p>
+                            <p class="card__textBox__comment">
+                                StableDiffusionで使用するパッケージマネージャー
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Python</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Python Library AI">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-python-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>venv</p>
+                            <p>仮想環境ライブラリ</p>
+                            <p class="card__textBox__comment">
+                                Pythonの組み込みライブラリ。<br>仮想環境を作成するためのもの。プロジェクト間でパッケージのバージョンの衝突を避けるために使用。
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Python</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Library</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Python Library AI">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-python-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>pip3</p>
+                            <p>Pythonパッケージインストーラー</p>
+                            <p class="card__textBox__comment">
+                                Python標準のパッケージインストーラー。Djangoもこれで構築。
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Python</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>AI</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Library</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2014年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-js-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>JavaScript</p>
+                            <p>標準のVanilla.js</p>
+                            <p class="card__textBox__comment">
+                                普通のJS。ES6からは出来ることが多くなったため、なるべく普通のJSを書くようにしている。
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS Library">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2014年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-jQuery-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>jQuery</p>
+                            <p>現主力JSライブラリ</p>
+                            <p class="card__textBox__comment">
+                                コンポーネントやプラグインをゴリゴリ作成している。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Library</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS Library">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2021年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-react-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>React</p>
+                            <p>次期主力JSライブラリ</p>
+                            <p class="card__textBox__comment">
+                                業務で必要となりjQueryに代わり使用中。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Library</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS Framework">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2021年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-vue-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Vue</p>
+                            <p>次期主力JSフレームワーク</p>
+                            <p class="card__textBox__comment">
+                                業務で必要となり使用中。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Framework</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS Framework">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2014年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-bootstrap-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Bootstrap</p>
+                            <p>現主力JSフレームワーク</p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Framework</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="JS Framework">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年06月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-react-bootstrap-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>React-Bootstrap</p>
+                            <p>React版Bootstrap</p>
+                            <p class="card__textBox__comment">
+                                業務で必要となり使用中。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>JS</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Framework</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Markup">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2014年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-html-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>HTML5</p>
+                            <p>基本のマークアップ</p>
+                            <p class="card__textBox__comment">
+                                徹底的に構造化し、運用ルールを定めることで保守効率を上げている。アジャイル開発に強い。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Markup</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Markup">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2021年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-code-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>XHTML</p>
+                            <p>HTMLメタ言語</p>
+                            <p class="card__textBox__comment">
+                                メルマガ開発に必要なHTMLメタ言語
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Markup</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Markup">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2021年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-code-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>XML</p>
+                            <p>HTMLメタ言語</p>
+                            <p class="card__textBox__comment">
+                                React開発に必要なHTMLメタ言語
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Markup</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Style">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2014年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-css-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>CSS3</p>
+                            <p>保守性の鬼</p>
+                            <p class="card__textBox__comment">
+                                シンプルで構造化された命名規則と変数化運用で<br> よりアジャイル開発に強くなった。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Style</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Style Preprocessor">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2015年04月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-sass-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Sass</p>
+                            <p>主力CSSプリプロセッサ</p>
+                            <p class="card__textBox__comment">
+                                独自にFLOCSSを改良したFUCSSをベースに効率的に運用。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Style</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Preprocessor</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="DB">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年6月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-mySQL-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>MySQL</p>
+                            <p>主力DB</p>
+                            <p class="card__textBox__comment">
+                                アプリに使用中
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>DB</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="DB Framework">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2023年6月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-django-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Django</p>
+                            <p>主力DBフレームワーク</p>
+                            <p class="card__textBox__comment">
+                                アプリに使用中
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-nfcw"><i class="fa-solid fa-fire"></i>Hot</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>DB</span>
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Framework</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="バージョン管理">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年2月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-github-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>GitHub</p>
+                            <p>主力VCS</p>
+                            <p class="card__textBox__comment">
+                                ほぼ全ての複数人参加プロジェクトで使用中
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>バージョン管理</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Design">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2009年04月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-illustrator-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>illustrator</p>
+                            <p>デザインソフト</p>
+                            <p class="card__textBox__comment">
+                                学生時代より使いこなし、ロゴコンペ200回以上の優勝経験がある。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Design</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Design">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2009年04月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-photoshop-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>photoshop</p>
+                            <p>デザインソフト</p>
+                            <p class="card__textBox__comment">
+                                学生時代より使いこなす。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Design</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Design">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-xd-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>XD</p>
+                            <p>デザインソフト</p>
+                            <p class="card__textBox__comment">
+                                モックアップ制作に使用。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Design</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Design">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年02月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-lightroom-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Lightroom</p>
+                            <p>写真編集ソフト</p>
+                            <p class="card__textBox__comment">
+                                写真編集に使用。
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Design</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Other">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2009年04月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-photograph-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Photograph</p>
+                            <p>写真撮影</p>
+                            <p class="card__textBox__comment">
+                                セミプロレベル
+                                <br> 企業案件経験あり
+                                <br> ・百貨店催事
+                                <br> ・ブランドイメージスチル<br>・飲食店イメージスチル
+                            </p>
+                            <div class="badgeBox">
+                                <span class="badge badge-success"><i class="fa-solid fa-medal"></i>熟練</span>
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Other</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Other">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-confluence-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Confluence</p>
+                            <p>情報共有</p>
+                            <p class="card__textBox__comment">
+                                以下のように使用。
+                                <br>・要件定義
+                                <br>・プロジェクト管理
+                                <br>・ナレッジ共有
+                                <br> ・命名規則、設計書などの共有
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Other</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Other">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年2月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-redmine-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Redmine</p>
+                            <p>進捗管理</p>
+                            <p class="card__textBox__comment">
+                                進捗管理用で使用。
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Other</span>
+                        </div>
+                    </a>
+                    <a href="#" class="card" data-class="Other">
+                        <div class="card__imgBox">
+                            <span class="postedTime"><i class="fa-solid fa-plane-departure"></i><span class="start">2020年10月</span></span>
+                            <span class="exTime"><i class="fa-solid fa-business-time"></i><span class="tableTitle">経験</span><span class="result">ー</span></span>
+                            <img src="/img/common/skills-slack-c.png" alt="card image">
+                        </div>
+                        <div class="card__textBox">
+                            <p>Slack</p>
+                            <p>コミュニケーションツール</p>
+                            <p class="card__textBox__comment">
+                                コミュニケーションに使用。
+                            </p>
+                            <div class="badgeBox">
+                            </div>
+                        </div>
+                        <div class="card__tagBox">
+                            <span class="tag"><i class="fa-solid fa-tag"></i>Other</span>
+                        </div>
+                    </a>
+                </section>
+            </section>
+            <section class="searchClearSection">
+                <button class="btn-searchClear"><i class="fa-solid fa-chevron-left"></i>全件表示にもどる</button>
+            </section>
+            </section>
+        </div>
+        <div id="page_top">
+            <a href="#"></a>
+        </div>
+    </main>
+    <footer id="getFooter"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/layout.js"></script>
+    <script src="/js/component.js"></script>
+    <script src="/js/search.js"></script>
+
+</body>
+
+</html>
