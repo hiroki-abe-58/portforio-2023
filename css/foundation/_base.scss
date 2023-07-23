@@ -159,7 +159,7 @@
     }
     
     .dexterityContainer {
-        background: url(/img/bg/bg-city-03.png);
+        background: url('./img/bg/bg-city-03.png');
         background-position: center;
         background-size: cover;
         position: relative;
@@ -308,7 +308,7 @@
         text-align: center;
         margin: 160px 0 160px;
         h2 {
-            background-image: url(/img/common/art.jpg);
+            background-image: url('./img/common/art.jpg');
             object-fit: contain;
             -webkit-background-clip: text;
             font-size: 80px;
@@ -339,7 +339,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: url('/img/bg/bg-city-mov.gif') center center;
+            background: url('./img/bg/bg-city-mov.gif') center center;
             background-size: cover;
             background-attachment: fixed;
         }
